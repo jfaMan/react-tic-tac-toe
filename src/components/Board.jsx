@@ -4,7 +4,7 @@ import Square from './Square';
 const Board = (props) => {
   const { squares, onClick } = props;
   return (
-    <div>
+    <div className="board">
       <Square value="1" onClick={onClick} />
       <Square value="2" onClick={onClick} />
       <Square value="3" onClick={onClick} />
