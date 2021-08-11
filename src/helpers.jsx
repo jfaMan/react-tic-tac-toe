@@ -18,12 +18,4 @@ const calculateWinner = (squares) => {
   return null;
 }
 
-const squares = [
-  null, null, null,
-  'X', 'X', 'O',
-  null, null, null
-];
-
-
-
-export { calculateWinner, squares };
+export default calculateWinner;
