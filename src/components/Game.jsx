@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Board from './Board';
 import calculateWinner from '../helpers';
+import Header from './Header';
 
 const Game = () => {
   const [board, setBoard] = useState(Array(9).fill(null));
@@ -17,6 +18,7 @@ const Game = () => {
 
   return (
     <>
+      <Header />
       <Board squares={board} onClick={handleClick}/>
       <div className='results'>
         <p>{winner ? `Player ${winner} is the winner!`: `Next player: ${xIsNext ? 'X' : 'O'}` }</p>
