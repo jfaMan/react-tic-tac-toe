@@ -5,7 +5,6 @@ const Square = (props) => {
   return (
     <button
       onClick={onClick}
-      // {console.log(squareColor)}
       className={`square ${squareTextColor}`}
     > 
       {value}
