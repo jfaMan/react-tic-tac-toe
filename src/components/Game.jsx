@@ -19,7 +19,8 @@ const Game = () => {
     <>
       <Board squares={board} onClick={handleClick}/>
       <div className='results'>
-        <p>{winner ? `${winner} is the winner!`: `Next player: ${xIsNext ? 'X' : 'O'}` }</p>
+        <p>{winner ? `Player ${winner} is the winner!`: `Next player: ${xIsNext ? 'X' : 'O'}` }</p>
+        <button className='btn btn-primary' onClick={() => setBoard(Array(9).fill(null))}>Start Game</button>
       </div>
     </>
   )
