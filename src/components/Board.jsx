@@ -5,7 +5,16 @@ const Board = (props) => {
   const { squares, onClick } = props;
   return (
     <div className="board">
-      {squares.map((square, i) => <Square key={i} value={square} onClick={() => onClick(i)} /> )}
+      {squares.map((square, i) => {
+        return (
+          <Square
+            key={i}
+            value={square}
+            onClick={() => onClick(i)}
+            squareTextColor={square === 'X' ? 'x-color' : 'o-color'} 
+          />
+        )}
+      )}
     </div>
   )
 }
