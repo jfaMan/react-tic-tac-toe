@@ -21,7 +21,7 @@ const Game = () => {
       <Header />
       <Board squares={board} onClick={handleClick} />
       <div className='results'>
-        <p>{winner ? `Player ${winner} is the winner!`: ()`Next player: ${xIsNext ? 'X' : 'O'}` }</p>
+        <p>{winner ? `Player ${winner} is the winner!` : `Next player: ${xIsNext ? 'X' : 'O'}`}</p>
         <button className='btn btn-success' onClick={() => setBoard(Array(9).fill(null))}>START GAME</button>
       </div>
     </>

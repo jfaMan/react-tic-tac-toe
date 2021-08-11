@@ -20,6 +20,7 @@ body {
 }
 
 .board {  
+  background-color: #29A352;
   border: 2px solid #29A352;
   display: grid;
   grid-template: repeat(3, 1fr) /repeat(3, 1fr);
