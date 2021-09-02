@@ -39,7 +39,7 @@ const Game = () => {
     } else if (draw) {
       return 'Draw!'
     } else {
-      return `Next player: ${xIsNext ? 'X' : 'O'}`
+      return totalTurns === 0 ? `Player ${xIsNext ? 'X' : 'O'} starts` : `Next player: ${xIsNext ? 'X' : 'O'}` 
     }
   }
 
